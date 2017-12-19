@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<title>Registration Exercise</title>
+	<link href="style.css" rel="stylesheet"></head>
+	<body>
+		<div class="l-page">
+			<div class="l-header">
+				<img class="logo logo-big" src="images/icons/logo-loveknitting.svg">
+				<img class="logo logo-small" src="images/icons/logo-loveknitting-sm.svg">
+				<h1 class="title">Registration Exercise</h1>
+			</div>
+			<div class="form">
+				<form id="reg-form">
+					<label class="form-label">
+						<span class="form-label-title">Email</span>
+						<input type="email" name="email" class="form-label-input" placeholder="example@example.com">
+					</label>
+					<label class="form-label">
+						<span class="form-label-title">Birthday</span>
+						<input type="date" name="birthday" class="form-label-input" placeholder="dd/mm/yyyy">
+					</label>
+					<label class="form-label">
+						<span class="form-label-title">Password</span>
+						<input type="password" name="pass" class="form-label-input">
+					</label>
+					<label class="form-label">
+						<span class="form-label-title">Confirm Password</span>
+						<input type="password" name="repass" class="form-label-input">
+					</label>
+					<input class="form-submit" type="submit" value="Register">
+					<img src="images/icons/spinner.svg" class="form-progress">
+					<div class="form-alert"></div>
+					<div class="form-info"></div>
+				</form>
+			</div>
+		</div>
+	<script type="text/javascript" src="bundle.js"></script></body>
+</html>

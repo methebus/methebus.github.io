@@ -1,0 +1,25 @@
+$margin-size: 16px;
+
+.l-full-page {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  text-align: center;
+}
+
+.l-full-page:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.l-sub-page {
+  width: 100%;
+  margin: $margin-size 0 $margin-size;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: left;
+}

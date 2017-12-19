@@ -1,0 +1,145 @@
+$header-text-color: #5f6062;
+
+$form-bg-color: #fff;
+$form-label-text-color: #5e5f61;
+$submit-color: #0ca49a;
+
+$logo-height: 80px;
+
+.logo {
+	height: $logo-height;
+	float: left;
+	display: inline-block;
+	width: 50px;
+}
+
+.logo-big {
+	display: none;
+}
+
+.title {
+	color: $header-text-color;
+	font-size: 1.3em;
+	height: $logo-height;
+	line-height: $logo-height;
+	display: inline-block;
+	margin: 0;
+	padding-left: 10px;
+}
+
+.form {
+	background-color: $form-bg-color;
+	overflow: hidden;
+	padding: 10px;
+
+	input {
+		outline: none;
+	}
+
+	.form-label {
+		display: block;
+		margin: 10px;
+		max-width: 331px;
+
+		.form-label-title {
+			color: $form-label-text-color;
+			display: inline-block;
+			width: 150px;
+		}
+
+		.form-label-input {
+			padding: 2px;
+			display: block;
+			border: 1px solid #777;
+			width: 170px;
+			height: 17px;
+		}
+	}
+
+	.form-submit {
+		background-color: $submit-color;
+		border: none;
+		cursor: pointer;
+		padding: 8px 15px;
+		margin: 10px;
+		color: #fff;
+		font-weight: bold;
+		transition: 300ms opacity ease;
+		float: left;
+
+		&:disabled {
+			opacity: .5;
+		}
+	}
+
+	.form-progress {
+		height: 47px;
+		transition: 150ms opacity ease;
+		opacity: 0;
+
+		&.visible {
+			opacity: 1;
+		}
+	}
+
+	.form-alert {
+		margin: 5px 10px;
+		word-wrap: break-word;
+		color: #f03333;
+	}
+
+	.form-info {
+		background-color: #0ca49a;
+		color: #fff;
+		box-shadow: 0 2px 6px #0ca49a;
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		padding: 20px;
+		box-sizing: border-box;
+		text-align: center;
+		font-size: 20px;
+		transform: scale(0.9) translate(-50%, -90%);
+		opacity: 0;
+		visibility: hidden;
+		transition: 200ms all ease;
+		max-width: 100%;
+		word-wrap: break-word;
+
+		&.visible {
+			visibility: visible;
+			transform: translate(-50%, -50%);
+			opacity: 1;
+		}
+	}
+}
+
+@media screen and (min-width: 600px) {
+	.logo {
+		width: auto;
+	}
+
+	.logo-big {
+		display: inline-block;
+	}
+
+	.logo-small {
+		display: none;
+	}
+
+	.title {
+		font-size: 1.6em;
+	}
+
+	.form {
+
+		.form-label {
+
+			.form-label-input {
+				display: inline-block;
+			}
+
+		}
+
+	}
+}

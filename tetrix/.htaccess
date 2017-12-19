@@ -1,0 +1,21 @@
+AddDefaultCharset UTF-8
+
+<ifModule mod_deflate.c>
+	<ifModule mod_filter.c>
+		AddType image/svg+xml .svg
+		AddOutputFilterByType DEFLATE application/vnd.ms-fontobject application/x-font-ttf font/opentype image/svg+xml image/x-icon
+	</ifModule>
+	<filesMatch "\.(css|js|html|php|svg|ico)$">
+		SetOutputFilter DEFLATE
+	</filesMatch>
+</ifModule>
+
+<ifModule mod_expires.c>
+	<FilesMatch "\.(svg|jpg|jpeg|png|ico|js|css)$">
+		Header set Cache-Control "max-age=2592000"
+	</FilesMatch>
+</ifModule>
+
+<IfModule mod_headers.c>
+	Header unset ETag
+</IfModule>

@@ -1,0 +1,44 @@
+$lun-base-color: #ff9800;
+$passed-color: $lun-base-color;
+$error-color: #ff0000;
+
+@mixin box-shadow($opts) {
+	-webkit-box-shadow: $opts;
+	-moz-box-shadow: $opts;
+	-ms-box-shadow: $opts;
+	box-shadow: $opts;
+}
+
+.reg-input.is-wrong {
+  border-color: $error-color;
+}
+
+.reg-pagination-step.is-disabled {
+  display: none;
+}
+
+.reg-pagination-link.is-passed {
+  color: $passed-color;
+}
+
+.reg-pagination-link.is-active {
+  color: #000;
+  font-weight: bold;
+}
+
+.reg-selector-list.opened {
+	display: block;
+}
+
+.reg-check_input-label.checked:before {
+	background: url(../images/ui/checkbox_checked.png) 50% 50% no-repeat #3b99fc;
+  border-color: #3b99fc;
+}
+
+.reg-check_input-label.checked:active:before {
+  background-color: #3b99fc*.93;
+}
+
+.reg-images-img.selected {
+  box-shadow: 0 0 0 3px $lun-base-color;
+}

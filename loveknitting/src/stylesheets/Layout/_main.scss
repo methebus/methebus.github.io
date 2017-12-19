@@ -1,0 +1,15 @@
+$page-large-size: 90%;
+$header-padding: 20px;
+
+.l-page {
+	.l-header {
+		padding: $header-padding 0;
+	}
+}
+
+@media screen and (min-width: 600px) {
+	.l-page {
+		width: $page-large-size;
+		margin: 0 50 - $page-large-size/2;
+	}
+}

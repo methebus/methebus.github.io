@@ -1,0 +1,405 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="description" content="Tetrix - масштабний IT-фестиваль, який поєднує Лекторій, Start-up challenge, хакатон, brain-олімпіаду, кіберспортивний турнір, lounge зону та ярмарку вакансій найкращих IT-компаній України."/>
+		<meta name="keywords" content="tetrix, tetrix 2017, тетрикс, тетрікс, tetrix it fest, it фестиваль, ярмарка вакансій, startup challenge, хакатон, hackathon, high-tech, лекторій, лекторий, лаунж, lounge, it, it fest"/>
+		<meta name="robots" content="index,follow"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<meta name="theme-color" content="#e8314f"/>
+		<title>Tetrix Fest 2017</title>
+		<link rel="shortcut icon" href="images/icons/icon.ico" />
+		<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&amp;subset=cyrillic" rel="stylesheet">
+		<link rel="stylesheet" href="css/main.css">
+	</head>
+	<body>
+		<svg xmlns="http://www.w3.org/2000/svg" version="1.1" style="display: none">
+			<defs>
+				<filter id="gooey">
+					<feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+					<feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 12 -5" result="goo" />
+					<feBlend in="SourceGraphic" in2="goo" result="goo_res"/>
+					<feOffset result="off_out" in="goo_res" dx="0" dy="2" />
+					<feColorMatrix result="matrix_out" in="off_out" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .5 0" />
+					<feGaussianBlur result="blur_out" in="matrix_out" stdDeviation="2" />
+					<feBlend in="goo_res" in2="blur_out"/>
+		  		</filter>
+		  		<filter id="grayscale">
+					<feColorMatrix type="matrix" values="0 1 0 0 1 0 1 0 0 1 0 1 0 0 1 0 1 0 1 0"/>
+				</filter>
+				<filter id="main-shadow">
+					<feOffset result="offOut" in="SourceAlpha" dx="0" dy="1" />
+					<feColorMatrix result="matrixOut" in="offOut" type="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 .6 0" />
+					<feGaussianBlur result="blurOut" in="matrixOut" stdDeviation="1" />
+					<feBlend in="SourceGraphic" in2="blurOut" mode="normal" opacity="0"/>
+				</filter>
+				
+			</defs>
+		</svg>
+		<ul class="sidebar-nav">
+			<svg version="1.1" x="0px" y="0px" width="100%" height="100%" class="sidebar-wave" viewBox="0 0 100 100" preserveAspectRatio="none">
+				<defs>
+					<filter id="sidebar-shadow">
+						<feOffset result="offOut" in="SourceAlpha" dx="0" dy="-6" />
+						<feGaussianBlur result="blurOut" in="offOut" stdDeviation="10" />
+						<feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+					</filter>
+				</defs>
+				<path d="M 0 71 C 12 97 50 55 100 90 L 100 0 L 0 0" class="sidebar-path" stroke="transparent" filter="url(#sidebar-shadow)" fill="#fff" opacity=1></path>
+			</svg>
+			<li class="sidebar-item active" id="link-main"><a href="#main">Головна</a></li>
+			<li class="sidebar-item" id="link-tetrix2017"><a href="#tetrix2017">Tetrix 2017</a></li>
+			<li class="sidebar-item" id="link-tetrix2016"><a href="#tetrix2016">Tetrix 2016</a></li>
+			<li class="sidebar-subitem" id="link-tetrix2016-partners"><a href="#tetrix2016-partners">Партнери</a></li>
+			<li class="sidebar-subitem" id="link-tetrix2016-gallery"><a href="#tetrix2016-gallery">Галерея</a></li>
+			<li class="sidebar-item" id="link-team"><a href="#team">Команда</a></li>
+			<li class="sidebar-item" id="link-contact"><a href="#contact">Напиши нам</a></li>
+		</ul>
+		<a href="#" class="sidebar-icon"></a>
+		<div class="page-container">
+			<div class="page" id="main" name="link-main">
+				<svg version="1.1" id="main-wave" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
+					<defs>
+						<linearGradient id="main-linear" x1="0%" y1="0%" x2="90%" y2="90%">
+							<stop offset="0%" style="stop-color:rgb(255,70,63);stop-opacity:1" />
+							<stop offset="100%" style="stop-color:rgb(224,42,120);stop-opacity:1" />
+						</linearGradient>
+					</defs>
+					<path d="M 0 92 C 40 97 60 87 100 91 L 100 0 L 0 0" stroke="transparent" fill="url(#main-linear)" opacity=1></path>
+					<path id="float-path" d="M 0 93 C 30 101 60 95 100 92 L 100 0 L 0 0" stroke="transparent" fill="url(#main-linear)" opacity=.5></path>
+				</svg>
+				<div class="logotag">
+					<div class="logotag-logos">
+						<img src="images/icons/logo.svg" class="logotag-logos-main">
+					</div>
+					<div class="logotag-tagline">
+						<div>
+							<p>Tetrix-2017 – це масштабний фестиваль, який збирає найкращі кар’єрні можливості для старту та професійного розвитку у сфері ІТ та high-tech. Це платформа, яка поєднує інтереси амбітної і талановитої молоді та передових high-tech компаній: понад 30 найкращих роботодавців України у сфері ІТ чекатимуть тебе на ярмарку вакансій.</p>
+							<p>Це потужний крок у твоєму саморозвитку і не менш потужний заряд емоцій: лекторій з топовими спікерами IT галузі; хакатон та Startup challenge для тих, хто хоче перевірити, чи зможе його ідея перевернути світ; Brain-олімпіада, інтелектуальні розваги, кіберспортивний турнір та лаунж-зона з розвагами у стилі high-tech!</p>
+							<a href="https://docs.google.com/forms/d/e/1FAIpQLSdpRPm0sRZpAqVQvkAIrToldXuC6UhV3ldYgmbQTc-lk-QQAA/viewform" class="reg-button" target="_blank">Реєструйся просто зараз</a>
+							<div class="logotag-contacts">
+								<a href="https://www.facebook.com/events/155716221677232/" target="_blank"><img src="images/icons/facebook.svg"></a>
+								<a href="mailto:tetrix@hcu.com.ua"><img src="images/icons/mail.svg"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="creators">
+						<a href="https://www.facebook.com/HumanCapitalUkraine/" target="_blank"><img src="images/icons/hcu.svg" id="hcu-logo"></a>
+						<a href="https://www.facebook.com/job.univ.kiev.ua/" target="_blank"><img src="images/icons/employment.svg" id="employment-logo"></a>
+				</div>
+			</div>
+			<div class="page" id="tetrix2017" name="link-tetrix2017">
+				<h1><img src="images/icons/tetrix_2017.png"> 2017</h1>
+				<div class="tetrix2017-description">
+					<p><b>TETRIX-2017</b> – це масштабний фестиваль, який збирає найкращі можливості для старту та професійного розвитку у сфері ІТ та High-tech. Це платформа, яка поєднує інтереси амбітної і талановитої молоді та передових high-tech компаній: понад 30 найкращих роботодавців України у сфері ІТ чекатимуть тебе на ярмарку вакансій.</p>
+					<p>Це потужний крок у твоєму саморозвитку і не менш потужний заряд емоцій: Лекторій з топ спікерами IT галузі, виступи яких допоможуть дізнатись про нові горизонти, хакатон та  startup challenge для тих хто хоче перевірити чи зможе його ідея перевернути світ, Brain-олімпіада, інтелектуальні розваги, кіберспортивний турнір та лаунж-зона з розвагами у стилі high-tech чекатимуть на тебе 4-5 жовтня на ВДНХ.</p>
+					<p align="center">Tetrix - знайди своє місце в ІТ!<br><a href="https://docs.google.com/forms/d/e/1FAIpQLSdpRPm0sRZpAqVQvkAIrToldXuC6UhV3ldYgmbQTc-lk-QQAA/viewform" class="reg-button" target="_blank">Зареєструватись на фестиваль</a></p>
+					<div class="tetrix-pres">
+						<div class="tetrix-slide">
+							<div class="slide-description">
+								<h3>Ярмарок вакансій та програм стажувань</h3>
+								<p>Понад 30 провідних роботодавців України чекатимуть тебе на двох локаціях. Різноманітні проекти, стажування, програми, технічні та нетехнічні вакансії для спеціалістів різного рівня від передових компаній – обери свою найкращу можливість!</p>
+							</div>
+							<div class="slide-action-container">
+								<div class="slide-action" id="vacancies">
+									<img src="images/ui/bag.svg" id="vacancies-bag">
+									<img src="images/ui/bag_opened.svg" id="vacancies-bag-opened">
+								</div>
+							</div>
+						</div>
+						<div class="tetrix-slide">
+							<h3>Партнери</h3>
+							<div class="partners-logo">
+								<img class="partners-big" src="images/icons/partners-2017/ubisoft.png">
+								<img class="partners-big" src="images/icons/partners-2017/3shape.png">
+								<img class="partners-medium" src="images/icons/partners/genesis.png">
+								<img class="partners-medium" src="images/icons/partners-2017/ulsee.png">
+								<img class="partners-medium" src="images/icons/partners-2017/apostera.png">
+								<img src="images/icons/partners-2017/vertamedia.png">
+								<img src="images/icons/partners-2017/globallogic.png">
+								<img src="images/icons/partners/developex.png">
+								<img src="images/icons/partners-2017/fozzy.png">
+								<img src="images/icons/partners/samsung.png">
+								<img src="images/icons/partners/1plus1.png">
+								<img src="images/icons/partners-2017/evo.png">
+								<img src="images/icons/partners/epam.png">
+							</div>
+						</div>
+						<div class="tetrix-slide">
+							<div class="slide-description">
+								<h3>Лекторій</h3>
+								<p>Динамічні лекції та досвід IT-спеціалістів у різних галузях - від творців соціальних проектів до гігантів розробки, з перших вуст. Відкрий нові горизонти, спілкуючись зі спікерами з Microsoft, Ubisoft, Juscutum та інших топових компаній!</p>
+								<p>Програма складатиметься із трьох насичених блоків:</p>
+								<ul>
+									<li>«Your future» переконає тебе, що кар’єра в топових компаніях та розробка власних проектів можлива</li>
+									<li>«Future today» познайомить з українцями, які втілюють фантастичні інновації в життя вже сьогодні</li>
+									<li>«Creating future» надихне сучасними тенденціями та історіями неймовірних стартапів</li>
+								</ul>
+							</div>
+							<div class="slide-action-container">
+								<div class="slide-action" id="lecture">
+									<img id="lecture-speaker" src="images/ui/speaker.svg">
+									<img id="lecture-sound" src="images/ui/sound.svg">
+								</div>
+							</div>
+						</div>
+						<div class="tetrix-slide">
+							<div class="slide-description">
+								<h3>Хакатон</h3>
+								<p>У тебе є ідеї, але не можеш виділити час для їх реалізації? Ми разом з <a href="https://www.facebook.com/HackathonExpert/" target="_blank">Hackathon Expert Group</a> даємо 48 годин, щоб втілити їх в життя та отримати винагороду за свою винахідливість.</p>
+								<p>Унікальні кейси, безцінний досвід та окремий призовий фонд від наших партнерів – усе це чекає на тебе 6-7 жовтня. Збирай команду та приходь випробувати себе!</p>
+								<p style="text-align: center"><a href="https://docs.google.com/forms/d/e/1FAIpQLSfR8x8KWeJthcyy1V8HhYs5GD_eIJ1rdU6FB1-KJtCV1ilsrA/viewform" class="reg-button" target="_blank">Зареєструватись на хакатон</a></p>
+							</div>
+							<div class="slide-action-container">
+								<div class="slide-action" id="terminal">
+									<img src="images/ui/terminal.svg">
+									<pre id="terminal-text">
+										
+									</pre>
+								</div>
+							</div>
+						</div>
+						<div class="tetrix-slide">
+							<div class="slide-description">
+								<h3>Start-up challenge</h3>
+								<p>Подія для справжніх інноваторів! Познайомся з тими, хто може допомогти тобі реалізувати найсміливіші ідеї, та отримай справжній boost від найкращих інкубаторів і акселераторів України і світу.</p>
+								<p style="text-align: center"><a href="https://docs.google.com/forms/d/e/1FAIpQLSdF16V5dUWY3xRMDQYWLqZqdfdGOWQp_qeLgamokDc_hIiWQQ/viewform" class="reg-button" target="_blank">Зареєструвати проект</a></p>
+							</div>
+							<div class="slide-action-container">
+								<div class="slide-action" id="startup">
+									<img src="images/ui/bulb.svg" id="startup-bulb">
+									<img src="images/ui/bulb_light.svg" id="startup-light">
+								</div>
+							</div>
+						</div>
+						<div class="tetrix-slide">
+							<div class="slide-description">
+								<h3>Brain-олімпіада та IT-квест від нашого фестивалю</h3>
+								<p>Завдання на математичну логіку, швидкість і креативність мислення та спеціальні задачі від компаній допоможуть проявити твої здібності. Переможці отримають цінні призи від наших партнерів і гарантовану увагу від компаній. Позмагайся сьогодні, щоб завтра роботодавці змагались за тебе!</p>
+								<p style="text-align: center"><a href="https://docs.google.com/forms/d/e/1FAIpQLSdpRPm0sRZpAqVQvkAIrToldXuC6UhV3ldYgmbQTc-lk-QQAA/viewform" class="reg-button" target="_blank">Спробувати сили на олімпіаді</a></p>
+								<p style="text-align: center; margin-top: -2.5em"><a href="https://docs.google.com/forms/d/e/1FAIpQLSdpRPm0sRZpAqVQvkAIrToldXuC6UhV3ldYgmbQTc-lk-QQAA/viewform" class="reg-button" target="_blank">Хочу піти на квест</a></p>
+							</div>
+							<div class="slide-action-container">
+								<div class="slide-action" id="brains">
+									<img src="images/ui/brains.svg">
+									<svg id="brains-maze" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70.41767 318.0011"><polyline id="brains-path" stroke-dasharray="10 1000" stroke-dashoffset="0" points="50.875 0 50.875 31.254 32.186 49.942 32.186 80.709 18.222 80.709 18.222 96.97 48.75 96.97 48.75 122.306 41.895 129.161 1.5 129.161 1.5 177.085 8.5 177.085 20.478 189.063 33.687 189.063 33.687 206.585 57.468 230.365 57.468 316.501 70.418 316.501"/></svg>
+								</div>
+							</div>
+						</div>
+						<div class="tetrix-slide">
+							<div class="slide-description">
+								<h3>Лаунж-зона</h3>
+								<p>Відпочинь від складних математичних розрахунків з друзями. На тебе чекають: різноманітні old school розваги, приставки, тетріси, VR, настільні ігри та багато чого іншого, але поки що це сюрприз :)</p>
+							</div>
+							<div class="slide-action-container">
+								<div class="slide-action" id="tetris">
+									<img src="images/ui/tetris.svg" id="tetris-pic">
+									<div id="tetris-screen">
+										<img src="images/ui/tetris_line.svg" id="tetris-line">
+										<img src="images/ui/tetris_item.svg" id="tetris-item">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<br>
+					<h3 align="center">Зустрінемось на фесті!</h3>
+				</div>
+			</div>
+			<div class="page" id="tetrix2016" name="link-tetrix2016">
+				<h1 align="center"><img src="images/icons/tetrix_2016.png"> 2016 - це</h1>
+				<div class="page-subpage">
+					<div class="subpage-container">
+					<div class="subpage" id="tetrix2016-info" name="link-tetrix2016-info">
+						<img src="images/bg/infographic.png" id="infographic-prev">
+					</div>
+
+					<div class="subpage" id="tetrix2016-partners" name="link-tetrix2016-partners">
+						<div class="partners-logo">
+							<img src="images/icons/partners/lun.png">
+							<img src="images/icons/partners/ubisoft.png">
+							<img src="images/icons/partners/genesis.png">
+							<img src="images/icons/partners/samsung.png">
+							<img src="images/icons/partners/epam.png">
+							<img src="images/icons/partners/brain_academy.png">
+							<img src="images/icons/partners/beetroot.png">
+							<img src="images/icons/partners/intetics.png">
+							<img src="images/icons/partners/lits.png">
+							<img src="images/icons/partners/qa.png">
+							<img src="images/icons/partners/smart.png">
+							<img src="images/icons/partners/simcorp.png">
+							<img src="images/icons/partners/hillel.png">
+							<img src="images/icons/partners/developex.png">
+							<img src="images/icons/partners/paymentwall.png">
+							<img src="images/icons/partners/acm.png">
+							<img src="images/icons/partners/1plus1.png">
+							<img src="images/icons/partners/sigma.png">
+						</div>
+					</div>
+
+					<div class="subpage" id="tetrix2016-gallery" name="link-tetrix2016-gallery">
+						<div id="gallery-all">
+							<div id="gallery-list">
+								<a href="https://drive.google.com/file/d/0B5-nfqzQWvTYVTFvaHU5bVJiVjg/preview?start=1" class="gallery-pic gallery-video"><img src="images/photos/2016/promo.jpg"></a>
+								<a href="images/photos/2016/14500422_1730149687202578_3529758298462481810_o.jpg" class="gallery-pic"><img src="images/photos/2016/min/14500422_1730149687202578_3529758298462481810_o.jpg"></a>
+								<a href="images/photos/2016/14543713_1730149673869246_2788856970400579296_o.jpg" class="gallery-pic"><img src="images/photos/2016/min/14543713_1730149673869246_2788856970400579296_o.jpg"></a>
+								<a href="images/photos/2016/14612376_1730149640535916_2708552684955553883_o.jpg" class="gallery-pic"><img src="images/photos/2016/min/14612376_1730149640535916_2708552684955553883_o.jpg"></a>
+								<a href="images/photos/2016/8sNY6nTDC0Q.jpg" class="gallery-pic"><img src="images/photos/2016/min/8sNY6nTDC0Q.jpg"></a>
+								<a href="images/photos/2016/IMG_5634.jpg" class="gallery-pic"><img src="images/photos/2016/min/IMG_5634.jpg"></a>
+								<a href="images/photos/2016/IMG_5718.jpg" class="gallery-pic"><img src="images/photos/2016/min/IMG_5718.jpg"></a>
+								<a href="images/photos/2016/v20KXDjgdPI.jpg" class="gallery-pic"><img src="images/photos/2016/min/v20KXDjgdPI.jpg"></a>
+								<a href="images/photos/2016/YugGShVoiQ8.jpg" class="gallery-pic"><img src="images/photos/2016/min/YugGShVoiQ8.jpg"></a>
+								<a href="images/photos/2016/_Iq30p_D9i4.jpg" class="gallery-pic"><img src="images/photos/2016/min/_Iq30p_D9i4.jpg"></a>
+							</div>
+						</div>
+						<div id="gallery-big">
+							<div id="gallery-big-photo" class="gallery-video" style="background: url(images/photos/2016/promo_big.jpg) center center no-repeat"></div>
+							<iframe class="hidden" id="gallery-big-video" src="" allowfullscreen></iframe>
+						</div>
+					</div>
+					</div>
+				</div>
+			</div>
+			<div class="page" id="team" name="link-team">
+				<h1 align="center">Команда</h1>
+				<div class="team-container">
+					<div class="team-block">
+						<img class="team-block-pic" src="images/photos/team/team1.jpg">
+						<div class="team-block-info">
+							<h3>Степанець Інна</h3>
+							<p>Co-founder, key account</p>
+						</div>
+						<a href="https://www.facebook.com/profile.php?id=100003988016684" target="_blank" class="team-block-facebook"></a>
+					</div>
+					<div class="team-block">
+						<img class="team-block-pic" src="images/photos/team/team2.jpg">
+						<div class="team-block-info">
+							<h3>Бачурін Ілля</h3>
+							<p>Co-founder, partnership manager</p>
+						</div>
+						<a href="https://www.facebook.com/profile.php?id=100006226907344" target="_blank" class="team-block-facebook"></a>
+					</div>
+					<div class="team-block">
+						<img class="team-block-pic" src="images/photos/team/team3.jpg">
+						<div class="team-block-info">
+							<h3>Новачок Світлана</h3>
+							<p>Lectorium coordinator, financial manager</p>
+						</div>
+						<a href="https://www.facebook.com/novachok.s" target="_blank" class="team-block-facebook"></a>
+					</div>
+					<div class="team-block">
+						<img class="team-block-pic" src="images/photos/team/team5.jpg">
+						<div class="team-block-info">
+							<h3>Козік Юрій</h3>
+							<p>Startup & International relations coordinator</p>
+						</div>
+						<a href="https://www.facebook.com/iurii.kozik" target="_blank" class="team-block-facebook"></a>
+					</div>
+					<div class="team-block">
+						<img class="team-block-pic" src="images/photos/team/team6.jpg">
+						<div class="team-block-info">
+							<h3>Івакіна Юлія</h3>
+							<p>Communication manager</p>
+						</div>
+						<a href="https://www.facebook.com/giulia.ivakina" target="_blank" class="team-block-facebook"></a>
+					</div>
+					<div class="team-block">
+						<img class="team-block-pic" src="images/photos/team/team7.jpg">
+						<div class="team-block-info">
+							<h3>Будзяк Наталія</h3>
+							<p>SMM manager, high-tech lounge zone coordinator</p>
+						</div>
+						<a href="https://www.facebook.com/taljasunny" target="_blank" class="team-block-facebook"></a>
+					</div>
+					<div class="team-block">
+						<img class="team-block-pic" src="images/photos/team/team8.jpg">
+						<div class="team-block-info">
+							<h3>Ніщик Олексій</h3>
+							<p>Activities coordinator</p>
+						</div>
+						<a href="https://www.facebook.com/alex.nischyk" target="_blank" class="team-block-facebook"></a>
+					</div>
+					<div class="team-block">
+						<img class="team-block-pic" src="images/photos/team/team9.jpg">
+						<div class="team-block-info">
+							<h3>Куриленко Роман</h3>
+							<p>Volunteers coordinator, technical director</p>
+						</div>
+						<a href="https://www.facebook.com/romanyson" target="_blank" class="team-block-facebook"></a>
+					</div>
+					<div class="team-block">
+						<img class="team-block-pic" src="images/photos/team/team10.jpg">
+						<div class="team-block-info">
+							<h3>Сідлецький Станіслав</h3>
+							<p>Web-developer & designer</p>
+						</div>
+						<a href="https://www.facebook.com/stas.sidletsky" target="_blank" class="team-block-facebook"></a>
+					</div>
+					<div class="team-block">
+						<img class="team-block-pic" src="images/photos/team/team14.jpg">
+						<div class="team-block-info">
+							<h3>Сазонова Дар'я</h3>
+							<p>PR manager</p>
+						</div>
+						<a href="https://www.facebook.com/darya.sazonova1616" target="_blank" class="team-block-facebook"></a>
+					</div>
+					<div class="team-block">
+						<img class="team-block-pic" src="images/photos/team/team4.jpg">
+						<div class="team-block-info">
+							<h3>Сочинський Станіслав</h3>
+							<p>IT-activity support</p>
+						</div>
+						<a href="https://www.facebook.com/ssochyns" target="_blank" class="team-block-facebook"></a>
+					</div>
+					<div class="team-block">
+						<img class="team-block-pic" src="images/photos/team/team13.jpg">
+						<div class="team-block-info">
+							<h3>Кухельний Кирило</h3>
+							<p>Hackathon support, blockchain communicator</p>
+						</div>
+						<a href="https://www.facebook.com/kukhelnyi" target="_blank" class="team-block-facebook"></a>
+					</div>
+					<div class="team-block">
+						<img class="team-block-pic" src="images/photos/team/team12.jpg">
+						<div class="team-block-info">
+							<h3>Кухарська Єлизавета</h3>
+							<p>SMM and PR support</p>
+						</div>
+						<a href="https://www.facebook.com/lizakukh" target="_blank" class="team-block-facebook"></a>
+					</div>
+				</div>
+			</div>
+			<div class="page" id="contact" name="link-contact">
+				<div id="contact-container">
+					<h1>Напиши нам</h1>
+					<div class="page-contact">
+						<div class="page-contact-form">
+							<form id="contact-form" method="post">
+								<input placeholder="Ім'я" name="name" type="text">
+								<input placeholder="Email" name="email" type="text">
+								<textarea placeholder="Повідомлення" name="text"></textarea>
+								<input value="" name="submit" id="submit-form" type="submit">
+								<label class="label-submit" for="submit-form">Надіслати</label>
+							</form>
+						</div>
+						<div class="page-contact-info">
+							<div class="page-contact-map"></div>
+							<div class="page-contact-us">
+								<h3 align="center">Зв'яжись із нами</h3>
+								<ul class="page-contact-list">
+									<li class="contact-list-item" id="contact-email">tetrix@hcu.com.ua</li>
+									<li class="contact-list-item" id="contact-phone">+380 63 401 1555</li>
+									<li class="contact-list-item" id="contact-location">просп. Академіка Глушкова, 4г, 4д</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="message">Lohsuka</div>
+		<script type="text/javascript" src="scripts/cube_full.js"></script>
+		<script type="text/javascript" src="scripts/main_full.js"></script>
+	</body>
+</html>

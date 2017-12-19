@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<!--
+
+##      ##
+ ##    ##   ######   ##    ##  ######   ##    ##  ######
+  ##  ##    ##        ##  ##   ##        ##  ##   ##
+    ##      #####       ##     #####       ##     #####
+  ##  ##    ##        ##  ##   ##        ##  ##   ##
+ ##    ##   ##       ##    ##  ##       ##    ##  ##
+##      ##  ######  ##      ## ######  ##      ## ######
+
+так, я побачив той напис
+
+-->
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<title>Регистрация</title>
+	<link href="dist/styles.css" rel="stylesheet"></head>
+	<body>
+		<div id="app">
+			<div class="l-full-page">
+				<div class="l-sub-page" v-if="step <= 3">
+					<div class="reg-pagination">
+						<a class="reg-pagination-link" v-bind:class="[lastCorrect >= 0? 'is-passed': '', step == 0? 'is-active': '']" href="#step1">1</a>
+						<a class="reg-pagination-link" v-bind:class="[lastCorrect >= 1? 'is-passed': '', step == 1? 'is-active': '']" href="#step2">2</a>
+						<a class="reg-pagination-link" v-bind:class="[lastCorrect >= 2? 'is-passed': '', step == 2? 'is-active': '']" href="#step3">3</a>
+						<a class="reg-pagination-link" v-bind:class="[lastCorrect >= 3? 'is-passed': '', step == 3? 'is-active': '']" href="#step4">4</a>
+					</div>
+					<div class="reg-step">
+						<h4 class="step-header">{{ (step + 1) + '. ' + steps[step] }}</h4>
+						<div v-show="step == 0">
+							<div class="reg-container">
+								<input type="text" class="reg-input" v-bind:class="[errors.name != ''? 'is-wrong': '']" placeholder="Имя" v-model="name" @input="checkForm" name="name">
+								<span class="reg-error" v-if="errors.name != ''"> — {{errors.name}}</span>
+							</div>
+							<div class="reg-container">
+								<input type="email" class="reg-input" v-bind:class="[errors.email != ''? 'is-wrong': '']" placeholder="Почта" v-model="email" @input="checkForm" name="email">
+								<span class="reg-error" v-if="errors.email != ''"> — {{errors.email}}</span>
+							</div>
+						</div>
+						<div v-show="step == 1">
+							<Selector title="Страна" @input="checkForm('country')" v-model="country" :error="errors.country" v-bind:options="countries"></Selector>
+							<Selector title="Город" @input="checkForm('city')" v-model="city" :dependent="country" :error="errors.city" v-bind:options="cities"></Selector>
+						</div>
+						<div v-show="step == 2">
+							<Checkinput title="Facebook" hint="Ваша страница в Facebook" @input="checkForm('facebook')" :error="errors.facebook" v-model="social.facebook"></Checkinput>
+							<Checkinput title="Вконтакте" hint="Ваша страница во Вконтакте" @input="checkForm('vk')" :error="errors.vk" v-model="social.vk"></Checkinput>
+							<Checkinput title="Twitter" hint="Ваша страница в Twitter" @input="checkForm('twitter')" :error="errors.twitter" v-model="social.twitter"></Checkinput>
+							<Checkinput title="Одноклассники" hint="Ваша страница в Одноклассниках" @input="checkForm('ok')" :error="errors.ok" v-model="social.ok"></Checkinput>
+						</div>
+						<div v-show="step == 3">
+							<div class="reg-images">
+								<div class="reg-images-container">
+									<div v-for="src in pictures" class="reg-images-img" @mousedown="choosePic" :class="src == pic? 'selected': ''" :rel="src" :style="{backgroundImage: 'url(./images/captcha/' + src + '.jpg)'}"></div>
+								</div>
+								<span class="reg-images-error">{{errors.pic}}</span>
+							</div>
+						</div>
+						<div v-show="step == 4">Результат</div>
+					</div>
+					<div class="reg-pagination">
+						<a v-bind:href="step == 0? '#step1': '#step' + step" class="reg-pagination-step reg-pagination-prev">Предыдущий</a>
+						<a v-bind:href="'#step' + (step + 2)" class="reg-pagination-step reg-pagination-next" v-bind:class="[step == 3? 'reg-pagination-result': '']">{{step == 3? 'Завершить': 'Следующий'}}</a>
+					</div>
+				</div>
+				<div class="l-sub-page" v-if="step == 4">
+					<div class="reg-profile">
+						<div class="reg-profile-info">
+							<div class="reg-profile-info-container">
+								<div class="reg-profile-main">
+									<h1 class="reg-profile-name">{{name}}</h1>
+									<h2 class="reg-profile-details">{{email}}</h2>
+								</div>
+								<div class="reg-profile-geo">
+									<h3 class="reg-profile-details">{{countries[country] + (city > 0? ', ' + cities[city]: '')}}</h2>
+								</div>
+								<div class="reg-profile-social">
+									<a v-for="(link, network) in social" v-if="link != null" target="_blank" :href="link" class="reg-profile-link">
+										<span class="reg-profile-link-network">{{networkTitles[network]}}: </span>{{link}}
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="reg-profile-avatar">
+							<div class="reg-profile-avatar-pic" :style="{backgroundImage: 'url(./images/captcha/' + pic + '.jpg)'}"></div>
+						</div>
+					</div>
+					<a href="#step1" @click="resetData" class="reg-repeat-bttn">Пройти заново</a>
+				</div>
+			</div>
+		</div>
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&amp;subset=cyrillic" rel="stylesheet">
+	<script type="text/javascript" src="dist/bundle.js"></script></body>
+</html>
